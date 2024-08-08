@@ -1,0 +1,30 @@
+# 线上配置文件
+server:
+  port: 8101
+spring:
+  # 数据库配置
+  # todo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_db
+    username: XXXX
+    password: XXXX
+  # Redis 配置
+  # todo
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    timeout: 5000
+    password: XXXX
+
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
+# 接口文档配置
+knife4j:
+  basic:
+    enable: true
+    username: root
+    password: XXXX
